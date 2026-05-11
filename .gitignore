@@ -1,0 +1,82 @@
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test and type-check artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project runtime outputs
+outputs/
+results/
+logs/
+tmp/
+*.log
+
+# Secrets and local configs
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Bioinformatics large/intermediate files
+*.bam
+*.bai
+*.cram
+*.crai
+*.sam
+*.vcf
+*.vcf.gz
+*.bcf
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fasta
+*.fa
+*.faa
+*.fna
+*.gff
+*.gff3
+*.gtf
+*.db
+*.sqlite
+
+# Local workflow/engine artifacts
+.nextflow*
+work/
+.snakemake/
+
+# Local Cursor planning artifacts
+.cursor/

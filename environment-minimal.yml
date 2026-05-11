@@ -1,0 +1,16 @@
+name: marineclaw-minimal
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pandas
+  - requests
+  - pyyaml
+  - pip:
+      - langgraph>=0.2
+      - langchain-core>=0.3
+      - langchain-openai>=0.2
+      - python-dotenv>=1.0
+      - gradio>=4.0,<6.0

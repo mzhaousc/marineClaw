@@ -1,0 +1,25 @@
+name: marineclaw
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - blast
+  - mafft
+  - fasttree
+  - fastqc
+  - multiqc
+  - hmmer
+  - pandas
+  - requests
+  - pyyaml
+  - bioblend
+  - planemo
+  - pip:
+      - langgraph>=0.2
+      - langchain-core>=0.3
+      - langchain-openai>=0.2
+      - python-dotenv>=1.0
+      - gradio>=4.0,<6.0

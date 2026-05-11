@@ -1,0 +1,15 @@
+langgraph>=0.2
+langchain-core>=0.3
+langchain-openai>=0.2
+pyyaml>=6.0
+python-dotenv>=1.0
+gradio>=4.0,<6.0
+pandas>=2.0
+requests>=2.31
+bioblend>=1.2
+
+# Optional model backends
+# langchain-anthropic>=0.3
+# langchain-groq>=0.2
+# langchain-google-genai>=2.0
+# langchain-ollama>=0.2

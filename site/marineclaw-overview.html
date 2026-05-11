@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>marineClaw | Marine Genomics AI Agent</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #111a2d;
+      --text: #e8eefc;
+      --muted: #9fb2d8;
+      --accent: #45c3ff;
+      --line: #223252;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #0a1428 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    .hero {
+      border: 1px solid var(--line);
+      background: rgba(17, 26, 45, 0.85);
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+    h1, h2 { margin: 0 0 12px; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 22px; margin-top: 28px; }
+    p { color: var(--muted); margin: 10px 0; }
+    .badge {
+      display: inline-block;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(17, 26, 45, 0.7);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-top: 14px;
+    }
+    ul { margin: 8px 0 0 18px; color: var(--text); }
+    code {
+      background: #0a1322;
+      border: 1px solid #223252;
+      border-radius: 6px;
+      padding: 2px 6px;
+      color: #cbe7ff;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #8ea6d0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="badge">Marine Genomics</div>
+      <div class="badge">Skill-based Agent</div>
+      <div class="badge">Local + Reproducible</div>
+      <h1>marineClaw</h1>
+      <p>
+        marineClaw is a local AI agent system for marine genomics and sequence-first bioinformatics.
+        It uses a skill-organized architecture and a generate-execute loop to produce runnable analysis scripts.
+      </p>
+      <p>
+        Core runtime supports <code>Python</code>, <code>R</code>, and <code>Bash</code>, with web UI,
+        script extraction, and workflow-oriented output.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Key Capabilities</h2>
+      <ul>
+        <li>BLAST-driven sequence search and hit filtering</li>
+        <li>Multiple sequence alignment and phylogenetic analysis</li>
+        <li>Functional/domain/pathway annotation and ortholog/HGT screening</li>
+        <li>Marine metagenomics profiling and comparative genomics</li>
+        <li>Galaxy Bridge integration (tool discovery + planemo execution path)</li>
+        <li>AlphaFold-compatible API structure prediction from FASTA</li>
+        <li>Marine literature and public dataset retrieval workflows</li>
+        <li>Ecological community stats (PCA/NMDS/PERMANOVA-ready)</li>
+        <li>Reproducible workflow templates (Snakemake and Nextflow DSL2)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Architecture Overview</h2>
+      <ul>
+        <li><code>marine_agent/</code>: LangGraph-based agent runtime, config, retriever, executor, CLI, web UI</li>
+        <li><code>skills/</code>: marine analysis skills as markdown + scripts</li>
+        <li><code>environment.yml</code>: full bioinformatics environment</li>
+        <li><code>environment-minimal.yml</code>: lightweight UI/agent startup environment</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Quick Start</h2>
+      <p>Minimal UI setup:</p>
+      <p><code>conda env create -f environment-minimal.yml && conda activate marineclaw-minimal && python -m marine_agent --web</code></p>
+      <p>Full environment setup:</p>
+      <p><code>conda env create -f environment.yml && conda activate marineclaw</code></p>
+    </section>
+
+    <section class="card">
+      <h2>Publishing Notes</h2>
+      <ul>
+        <li>Do not publish <code>.env</code> or API keys.</li>
+        <li>Use <code>.env.example</code> for public configuration template.</li>
+        <li>Keep large raw sequencing files outside the git repository.</li>
+      </ul>
+    </section>
+
+    <p class="footer">
+      marineClaw project page. Keep this file synchronized with README when adding new skills.
+    </p>
+  </div>
+</body>
+</html>
