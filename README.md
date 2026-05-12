@@ -131,7 +131,7 @@ Get API key from Galaxy AU:
 
 Run tool discovery:
 ```bash
-cd /home/mzhao/marineClaw
+cd /path/to/marineClaw
 python skills/galaxy-bridge-au/scripts/galaxy_tool_discovery.py \
   --galaxy-url https://usegalaxy.org.au \
   --api-key "$GALAXY_API_KEY" \
