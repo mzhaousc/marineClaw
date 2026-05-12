@@ -158,9 +158,6 @@ Run against fully local Galaxy container:
 planemo run --engine docker_galaxy --download_outputs workflow.ga job.yml
 ```
 
-## Optional SmartBLAST Integration
-Use `marine_agent/smartblast_client.py` to call a running SmartBLAST follow-up API (`http://localhost:8000`).
-
 ## HPC deployment (Slurm, BLAST nr, parallelism)
 
 See [HPC.md](HPC.md) for cluster setup, `BLASTDB`, scratch, job arrays, and multi-core BLAST.  
