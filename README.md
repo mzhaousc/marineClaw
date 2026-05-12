@@ -19,7 +19,7 @@ It follows a `generate ↔ execute` loop and supports Python/R/Bash execution, w
 
 ### Option A (recommended): Conda / Mamba
 ```bash
-cd /home/mzhao/marineClaw
+cd /path/to/marineClaw
 conda env create -f environment.yml
 conda activate marineclaw
 ```
@@ -31,7 +31,7 @@ conda env update -f environment.yml --prune
 
 ### Option A2: Conda minimal (UI-first, no heavy bio CLI tools)
 ```bash
-cd /home/mzhao/marineClaw
+cd /path/to/marineClaw
 conda env create -f environment-minimal.yml
 conda activate marineclaw-minimal
 python -m marine_agent --web
@@ -39,12 +39,12 @@ python -m marine_agent --web
 
 ### Option B: pip only
 ```bash
-cd /home/mzhao/marineClaw
+cd /path/to/marineClaw
 pip install -r requirements.txt
 ```
 
 ## Configure
-Create `.env` at `/home/mzhao/marineClaw/.env` (optional):
+Create `.env` at `/path/to/marineClaw/.env` (optional):
 ```env
 LLM_SOURCE=OpenAI
 OPENAI_API_KEY=your_key
